@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <title>Zay Shop - Contact</title>
+    <title>Oncelle - Contáctanos</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/imgres/coccinelle_ico.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgres/occnelle_ico.ico">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/templatemo.css">
@@ -32,7 +32,7 @@
             <div class="w-100 d-flex justify-content-between">
                 <div>
                     <i class="fa fa-envelope mx-2"></i>
-                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@oncelle.com">info@oncelle.com</a>
                     <i class="fa fa-phone mx-2"></i>
                     <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340">010-020-0340</a>
                 </div>
@@ -67,7 +67,7 @@
                             <a class="nav-link" href="http://localhost:3000/">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://localhost:3000/about">Sobre nosotros</a>
+                            <a class="nav-link" href="http://localhost:3000/about">Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="http://localhost:3000/shop">Tienda</a>
@@ -91,11 +91,11 @@
                     </a>
                     <a class="nav-icon position-relative text-decoration-none" href="#">
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
                     </a>
                     <a class="nav-icon position-relative text-decoration-none" href="#">
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
                     </a>
                 </div>
             </div>
@@ -125,36 +125,15 @@
     <!-- Start Content Page -->
     <div class="container-fluid bg-light py-5">
         <div class="col-md-6 m-auto text-center">
-            <h1 class="h1">Contact Us</h1>
+            <h1 class="h1">Contáctanos</h1>
             <p>
-                Proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Lorem ipsum dolor sit amet.
+                Encuentra nuestra tienda en Real Plaza Centro Civico!  
             </p>
         </div>
     </div>
 
     <!-- Start Map -->
-    <div id="mapid" style="width: 100%; height: 300px;"></div>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-    <script>
-        var mymap = L.map('mapid').setView([-12.058738519296629, -77.03548709766035, 13], 13);
-
-        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-            maxZoom: 18,
-            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-                '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            id: 'mapbox/streets-v11',
-            tileSize: 512,
-            zoomOffset: -1
-        }).addTo(mymap);
-
-        L.marker([-12.058738519296629, -77.03548709766035, 13]).addTo(mymap)
-            .bindPopup("<b>Oncelle</b> Tienda lima<br />Ubicacion.").openPopup();
-
-        mymap.scrollWheelZoom.disable();
-        mymap.touchZoom.disable();
-    </script>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1950.9010038566105!2d-77.0370058292051!3d-12.057139630085336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8c6c76e03e5%3A0x3e12ff686b901453!2sReal%20Plaza%20Centro%20C%C3%ADvico!5e0!3m2!1ses!2spe!4v1716817152919!5m2!1ses!2spe" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <!-- Ena Map -->
 
     <!-- Start Contact -->
@@ -163,7 +142,7 @@
             <form class="col-md-9 m-auto" method="post" role="form">
                 <div class="row">
                     <div class="form-group col-md-6 mb-3">
-                        <label for="inputname">Name</label>
+                        <label for="inputname">Nombre</label>
                         <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Name">
                     </div>
                     <div class="form-group col-md-6 mb-3">
@@ -172,16 +151,16 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="inputsubject">Subject</label>
+                    <label for="inputsubject">Asunto</label>
                     <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Subject">
                 </div>
                 <div class="mb-3">
-                    <label for="inputmessage">Message</label>
+                    <label for="inputmessage">Mensaje</label>
                     <textarea class="form-control mt-1" id="message" name="message" placeholder="Message" rows="8"></textarea>
                 </div>
                 <div class="row">
                     <div class="col text-end mt-2">
-                        <button type="submit" class="btn btn-success btn-lg px-3">Let’s Talk</button>
+                        <button type="submit" class="btn btn-success btn-lg px-3">Enviar</button>
                     </div>
                 </div>
             </form>
@@ -217,22 +196,20 @@
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Para ella</a></li>
-                        <li><a class="text-decoration-none" href="#">Collares</a></li>
-                        <li><a class="text-decoration-none" href="#">Pulseras</a></li>
-                        <li><a class="text-decoration-none" href="#">Anillos</a></li>
+                        <li><a class="text-decoration-none" href="http://localhost:3000/shop">Collares</a></li>
+                        <li><a class="text-decoration-none" href="http://localhost:3000/shoppulsera">Pulseras</a></li>
+                        <li><a class="text-decoration-none" href="http://localhost:3000/shopanillo">Anillos</a></li>
                         
                    </ul>
                 </div>
 
                 <div class="col-md-4 pt-5">
-                    <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Información adicional</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Inicio</a></li>
-                        <li><a class="text-decoration-none" href="#">Sobre nosotros</a></li>
-                        <li><a class="text-decoration-none" href="#">Tiendas</a></li>
-                        <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                        <li><a class="text-decoration-none" href="#">Contáctanos</a></li>
+                        <li><a class="text-decoration-none" href="http://localhost:3000/">Inicio</a></li>
+                        <li><a class="text-decoration-none" href="http://localhost:3000/about">Nosotros</a></li>
+                        <li><a class="text-decoration-none" href="http://localhost:3000/shop">Tienda</a></li>
+                        <li><a class="text-decoration-none" href="http://localhost:3000/contact">Contáctanos</a></li>
                     </ul>
                 </div>
 
