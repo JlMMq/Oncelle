@@ -1,15 +1,10 @@
 const express = require('express')
-const jwt = require('jsonwebtoken')
 const config = require('./public/scripts/config')
 
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
-app.all('/user', (req, res, next) => {
-    console.log('Paso por aqui')
-    next()
-})
 
 app.get('/', (req, res) => {
     console.log('index.html')
@@ -40,6 +35,21 @@ app.get('/shopanillo',(req,res) => {
 app.get('/shoppulsera',(req,res) => {
     console.log('shoppulsera.html')
     res.sendFile(__dirname + '/public/shoppulsera.html')
+})
+
+app.post('/solicitud',(req,res) => {
+    const solicitud = {
+        nombre: `${req.body.name}`,
+        correo: `${req.body.email}`,
+        asunto: `${req.body.subject}`,
+        mensaje: `${req.body.message}`
+    }
+    console.log('Enviado por: ' + solicitud.nombre +'\n'
+        + 'Con correo: ' + solicitud.correo + '\n'
+        + 'Asunto: ' + solicitud.asunto + '\n'
+        + 'Mensaje: ' + solicitud.mensaje  
+    )
+    res.sendFile(__dirname + '/public/contact.html')
 })
 
 app.use(express.static('public'))

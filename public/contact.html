@@ -89,6 +89,7 @@
                     <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
                         <i class="fa fa-fw fa-search text-dark mr-2"></i>
                     </a>
+                    <!--
                     <a class="nav-icon position-relative text-decoration-none" href="#">
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
@@ -97,6 +98,7 @@
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
                     </a>
+                    -->
                 </div>
             </div>
 
@@ -139,24 +141,24 @@
     <!-- Start Contact -->
     <div class="container py-5">
         <div class="row py-5">
-            <form class="col-md-9 m-auto" method="post" role="form">
+            <form class="col-md-9 m-auto" method="post" role="form" action="http://localhost:3000/solicitud">
                 <div class="row">
                     <div class="form-group col-md-6 mb-3">
                         <label for="inputname">Nombre</label>
-                        <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Name">
+                        <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Nombre">
                     </div>
                     <div class="form-group col-md-6 mb-3">
                         <label for="inputemail">Email</label>
-                        <input type="email" class="form-control mt-1" id="email" name="email" placeholder="Email">
+                        <input type="email" class="form-control mt-1" id="email" name="email" placeholder="Correo">
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="inputsubject">Asunto</label>
-                    <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Subject">
+                    <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Asunto">
                 </div>
                 <div class="mb-3">
                     <label for="inputmessage">Mensaje</label>
-                    <textarea class="form-control mt-1" id="message" name="message" placeholder="Message" rows="8"></textarea>
+                    <textarea class="form-control mt-1" id="message" name="message" placeholder="Escriba su mensaje..." rows="8"></textarea>
                 </div>
                 <div class="row">
                     <div class="col text-end mt-2">
